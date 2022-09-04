@@ -114,12 +114,11 @@ h1 {
 .main-content {
     width: 100vw;
 }
-.main-content_section_1 {
+.main-content_section {
     display: flex;
     .main-content__column {
         flex: 0 0 50%;
         height: 100%;
-
         .img-1 {
             height: 100%;
             width: 100%;
@@ -131,4 +130,43 @@ h3 {
     font-family: Fraunces;
     font-size: 42px;
     font-weight: 900;
+    color: var(--Very-dark-desaturated-blue);
+}
+.content__text {
+    width: 400px;
+    margin: 20% auto;
+    p {
+        color: var(--Grayish-blue);
+        font-size: 18px;
+        line-height: 30px;
+    }
+    a {
+        font-family: Fraunces;
+        color: var(--Very-dark-desaturated-blue);
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: underline yellow 4px;
+    }
+}
+.img-bg {
+    h3,
+    p {
+        color: var(--Very-dark-grayish-blue);
+        text-align: center;
+    }
+    .content__text {
+        margin-top: 60%;
+    }
+}
+.design {
+    background-image: url(/sunnyside_landing/images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.photo {
+    background-image: url(/sunnyside_landing/images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
