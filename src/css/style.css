@@ -21,6 +21,10 @@ body {
   body ul {
     list-style: none; }
 
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+
 .header-container {
   background-image: url(/sunnyside_landing/images/desktop/image-header.jpg);
   height: 100vh;
@@ -28,7 +32,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  max-width: 1440px; }
 
 h1 {
   text-transform: uppercase;
@@ -90,7 +95,7 @@ h1 {
     transform: translateY(0px); } }
 
 .main-content {
-  width: 100vw; }
+  max-width: 1440px; }
 
 .main-content_section {
   display: flex; }
@@ -143,6 +148,7 @@ h3 {
   background-size: cover; }
 
 .client {
+  max-width: 1440px;
   padding: 30px; }
   .client h2 {
     text-align: center;
@@ -170,7 +176,7 @@ h3 {
   .client h4 {
     margin: 50px 0 10px 0;
     font-family: Fraunces;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bold; }
 
 .client-container {
@@ -182,3 +188,14 @@ h3 {
     flex-direction: column;
     align-items: center;
     width: 350px; }
+
+.images-content {
+  display: flex;
+  max-width: 1440px;
+  margin: 135px auto;
+  align-items: center;
+  justify-content: center; }
+  .images-content .image-box {
+    width: 25%; }
+  .images-content img {
+    max-width: 360px; }

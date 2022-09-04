@@ -28,6 +28,10 @@ body {
         list-style: none;
     }
 }
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 // Header
 
@@ -39,6 +43,7 @@ body {
     background-size: cover;
     overflow: hidden;
     position: relative;
+    max-width: 1440px;
 }
 h1 {
     text-transform: uppercase;
@@ -112,7 +117,8 @@ h1 {
 // Main section
 
 .main-content {
-    width: 100vw;
+    // width: 100vw;
+    max-width: 1440px;
 }
 .main-content_section {
     display: flex;
@@ -171,9 +177,11 @@ h3 {
     background-size: cover;
 }
 
-// Client container
+// Client's section
 
 .client {
+    max-width: 1440px;
+
     padding: 30px;
     h2 {
         text-align: center;
@@ -206,7 +214,7 @@ h3 {
     h4 {
         margin: 50px 0 10px 0;
         font-family: Fraunces;
-        font-size: 20px;
+        font-size: 19px;
         font-weight: bold;
     }
 }
@@ -219,5 +227,21 @@ h3 {
         flex-direction: column;
         align-items: center;
         width: 350px;
+    }
+}
+
+// Photo's container
+
+.images-content {
+    display: flex;
+    max-width: 1440px;
+    margin: 135px auto;
+    align-items: center;
+    justify-content: center;
+    .image-box {
+        width: 25%;
+    }
+    img {
+        max-width: 360px;
     }
 }
