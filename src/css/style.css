@@ -141,3 +141,44 @@ h3 {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover; }
+
+.client {
+  padding: 30px; }
+  .client h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Fraunces;
+    color: var(--Grayish-blue);
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-bottom: 80px; }
+  .client img {
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 40px; }
+  .client p {
+    color: var(--Grayish-blue);
+    font-size: 18px;
+    line-height: 30px; }
+  .client p,
+  .client span {
+    color: var(--Very-dark-grayish-blue);
+    text-align: center; }
+  .client span {
+    font-size: 15px;
+    color: var(--Grayish-blue); }
+  .client h4 {
+    margin: 50px 0 10px 0;
+    font-family: Fraunces;
+    font-size: 20px;
+    font-weight: bold; }
+
+.client-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+  .client-container .client-container__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px; }
