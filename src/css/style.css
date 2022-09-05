@@ -5,7 +5,7 @@
   --Yellow: hsl(51, 100%, 49%);
   --Dark-desaturated-cyan: hsl(167, 40%, 24%);
   --Dark-blue: hsl(198, 62%, 26%);
-  --Dark-moderate-cyan: hsl(168, 34%, 41%);
+  --Dark-moderate-cyan: #90d4c5;
   --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
   --Very-dark-grayish-blue: hsl(213, 9%, 39%);
   --ark-grayish-blue: hsl(232, 10%, 55%);
@@ -27,7 +27,7 @@ body {
 
 .header-container {
   background-image: url(/sunnyside_landing/images/desktop/image-header.jpg);
-  height: 100vh;
+  height: 800px;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +42,8 @@ h1 {
   letter-spacing: 12px;
   font-family: Fraunces;
   font-weight: 900;
-  text-align: center; }
+  text-align: center;
+  margin-top: 6.5rem; }
 
 .header-container__nav {
   display: flex;
@@ -50,7 +51,9 @@ h1 {
   align-items: center;
   justify-content: space-between; }
   .header-container__nav .header-container__logo {
-    margin-left: 50px; }
+    margin: 40px 0 0 40px; }
+    .header-container__nav .header-container__logo img {
+      width: 175px; }
 
 .header-container__menu {
   margin-right: 20px; }
@@ -61,16 +64,17 @@ h1 {
   align-items: center;
   justify-content: space-between; }
   .header-menu-list a {
+    padding-right: 25px;
     color: var(--White); }
   .header-menu-list li {
-    margin: 20px;
+    margin: 34px 22px 0 0;
     font-size: 18px; }
   .header-menu-list .contact {
     text-transform: uppercase;
     font-size: 16px;
     color: var(--Dark-blue);
     border-radius: 30px;
-    padding: 15px 25px;
+    padding: 17px 35px;
     background-color: var(--White);
     font-family: Fraunces; }
   .header-menu-list .contact:hover {
@@ -100,40 +104,63 @@ h1 {
 .main-content_section {
   display: flex; }
   .main-content_section .main-content__column {
-    flex: 0 0 50%;
-    height: 100%; }
-    .main-content_section .main-content__column .img-1 {
+    flex: 0 0 50%; }
+    .main-content_section .main-content__column .main-content__img {
       height: 100%;
       width: 100%;
       object-fit: cover; }
 
-h3 {
-  font-family: Fraunces;
-  font-size: 42px;
-  font-weight: 900;
-  color: var(--Very-dark-desaturated-blue); }
-
 .content__text {
-  width: 400px;
-  margin: 20% auto; }
-  .content__text p {
-    color: var(--Grayish-blue);
-    font-size: 18px;
-    line-height: 30px; }
+  padding-left: 60px; }
   .content__text a {
+    text-decoration: underline var(--Yellow) 4px; }
+
+.content__text-right {
+  padding-right: 60px; }
+  .content__text-right a {
+    text-decoration: underline var(--Soft-red) 4px; }
+
+.content__text,
+.content__text-right {
+  width: 450px;
+  margin: 0 auto;
+  padding-top: 110px; }
+  .content__text h3,
+  .content__text-right h3 {
+    font-family: Fraunces;
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--Very-dark-desaturated-blue); }
+  .content__text p,
+  .content__text-right p {
+    margin-top: -10px;
+    margin-bottom: 45px;
+    color: var(--Grayish-blue);
+    font-size: 17px;
+    line-height: 28px; }
+  .content__text a,
+  .content__text-right a {
     font-family: Fraunces;
     color: var(--Very-dark-desaturated-blue);
     font-size: 16px;
+    font-weight: 900;
     text-transform: uppercase;
-    text-decoration: underline yellow 4px; }
+    padding-left: 15px; }
 
-.img-bg h3,
-.img-bg p {
-  color: var(--Very-dark-grayish-blue);
+.img-bg {
   text-align: center; }
-
-.img-bg .content__text {
-  margin-top: 60%; }
+  .img-bg h3 {
+    font-size: 27px;
+    text-transform: capitalize;
+    padding-bottom: 8px; }
+  .img-bg h3,
+  .img-bg p {
+    color: var(--Very-dark-grayish-blue); }
+  .img-bg .content__text {
+    margin-top: 35.5%;
+    width: 360px;
+    padding-bottom: 13px;
+    margin-right: 25%; }
 
 .design {
   background-image: url(/sunnyside_landing/images/desktop/image-graphic-design.jpg);
@@ -149,7 +176,7 @@ h3 {
 
 .client {
   max-width: 1440px;
-  padding: 30px; }
+  margin-top: 10rem; }
   .client h2 {
     text-align: center;
     text-transform: uppercase;
@@ -160,12 +187,12 @@ h3 {
     margin-bottom: 80px; }
   .client img {
     border-radius: 50%;
-    width: 80px;
+    width: 72px;
     margin-bottom: 40px; }
   .client p {
     color: var(--Grayish-blue);
     font-size: 18px;
-    line-height: 30px; }
+    line-height: 32px; }
   .client p,
   .client span {
     color: var(--Very-dark-grayish-blue);
@@ -174,7 +201,7 @@ h3 {
     font-size: 15px;
     color: var(--Grayish-blue); }
   .client h4 {
-    margin: 50px 0 10px 0;
+    margin: 54px 12px 10px 0;
     font-family: Fraunces;
     font-size: 19px;
     font-weight: bold; }
@@ -187,15 +214,50 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 350px; }
+    width: 350px;
+    margin: 0 15px; }
 
 .images-content {
   display: flex;
   max-width: 1440px;
-  margin: 135px auto;
-  align-items: center;
-  justify-content: center; }
+  margin: 160px 0 auto; }
   .images-content .image-box {
     width: 25%; }
   .images-content img {
     max-width: 360px; }
+
+footer {
+  text-align: center;
+  background-color: var(--Dark-moderate-cyan);
+  margin: -3px auto; }
+  footer img {
+    width: 180px;
+    margin-top: 75px; }
+  footer .footer-menu-list {
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 38px;
+    margin-bottom: 40px;
+    align-items: center; }
+  footer li {
+    font-size: 18px;
+    padding-left: 30px; }
+  footer a {
+    color: var(--Dark-desaturated-cyan); }
+  footer a:hover {
+    color: var(--White); }
+  footer .middle {
+    margin: 0 25px; }
+  footer .icons {
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 24px;
+    padding-left: 37px; }
+  footer i {
+    margin: 45px 25px 60px 0;
+    color: var(--Dark-desaturated-cyan); }
+  footer i:hover {
+    color: var(--White); }
