@@ -25,12 +25,6 @@
         <div class="wrapper">
             <div class="container">
                 <header>
-                    <div class="menu-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
                     <div class="header-container">
                         <div class="header-container__nav">
                             <div class="header-container__logo">
@@ -39,6 +33,41 @@
                                     alt="logo sunnyside"
                                 />
                             </div>
+                            <div class="burger">
+                                <div>
+                                    <!-- <input
+                                        type="button"
+                                        value="Нажми"
+                                        id="popup__toggle"
+                                    /> -->
+                                    <img
+                                        src="../images/icon-hamburger.svg"
+                                        alt="burger-menu"
+                                        id="popup__toggle"
+                                    />
+                                </div>
+                                <!--[if lt IE 9
+                                    ]><div
+                                        class="popup__overlay popup__overlay_ie"
+                                    ></div
+                                ><![endif]-->
+                                <div class="popup__overlay">
+                                    <div class="popup">
+                                        <div class="popup__close">X</div>
+
+                                        <ul>
+                                            <li class="popup-list">About</li>
+                                            <li class="popup-list">Services</li>
+                                            <li class="popup-list">Projects</li>
+                                            <li class="popup-list">contact</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--[if lt IE 9
+                                    ]><div class="popup__valignfix"></div
+                                ><![endif]-->
+                            </div>
+
                             <div class="header-container__menu menu">
                                 <nav class="header-menu">
                                     <ul class="header-menu-list">
@@ -74,6 +103,7 @@
                                 </nav>
                             </div>
                         </div>
+
                         <div class="header-container__arrow">
                             <img
                                 class="arrow-down"
@@ -254,6 +284,10 @@
                 </footer>
             </div>
         </div>
+        <script
+            type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+        ></script>
         <script src="../src/script.js"></script>
     </body>
 </html>

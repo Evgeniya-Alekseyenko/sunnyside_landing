@@ -1,17 +1,15 @@
-let menuBtn = document.querySelector('.menu-btn');
-let menu = document.querySelector('.menu');
-
-menuBtn.addEventListener('click', function () {
-    menuBtn.classList.toggle('active');
-    menu.classList.toggle('active');
+$(window).ready(function () {
+    p = $('.popup__overlay');
+    $('#popup__toggle').click(function () {
+        p.css('display', 'block');
+    });
+    p.click(function (event) {
+        e = event || window.event;
+        if (e.target == this) {
+            $(p).css('display', 'none');
+        }
+    });
+    $('.popup__close').click(function () {
+        p.css('display', 'none');
+    });
 });
-
-if (window.innerWidth >= 768) {
-    menuBtn.style.display = 'none';
-}
-
-if (menuBtn.style.display === 'none') {
-    menuBtn.style.display = 'block';
-} else {
-    menuBtn.style.display = 'none';
-}
