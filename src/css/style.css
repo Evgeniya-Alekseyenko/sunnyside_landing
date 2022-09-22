@@ -16,7 +16,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: Barlow;
-  overflow: hidden; }
+  overflow: auto; }
   body a {
     text-decoration: none; }
   body ul {
@@ -101,6 +101,9 @@ body {
   height: 100%;
   vertical-align: middle; }
 
+.burger {
+  margin-top: 20px; }
+
 .header-container {
   background-image: url(/sunnyside_landing/images/desktop/image-header.jpg);
   height: 800px;
@@ -112,7 +115,7 @@ body {
   max-width: 1440px; }
   @media (max-width: 480px) {
     .header-container {
-      height: 540px;
+      height: 740px;
       background-size: cover;
       background-position: center center;
       background-image: url(/sunnyside_landing/images/mobile/image-header.jpg); } }
@@ -137,23 +140,30 @@ h1 {
   align-items: center;
   justify-content: space-between; }
   @media (max-width: 480px) {
-    .header-container__nav .burger {
-      margin: 30px 30px 0 0; } }
-  .header-container__nav .header-container__logo {
-    margin: 40px 0 0 40px; }
+    .header-container__nav {
+      margin: 0 20px; } }
+  @media (min-width: 480px) and (max-width: 780px) {
+    .header-container__nav {
+      flex-direction: column;
+      font-size: 12px; } }
+.header-container__logo {
+  margin: 40px 0 0 40px; }
+  @media (max-width: 480px) {
+    .header-container__logo {
+      margin: 30px 0 0 20px; } }
+  .header-container__logo img {
+    width: 175px; }
     @media (max-width: 480px) {
-      .header-container__nav .header-container__logo {
-        margin: 30px 0 0 20px; } }
-    .header-container__nav .header-container__logo img {
-      width: 175px; }
-      @media (max-width: 480px) {
-        .header-container__nav .header-container__logo img {
-          width: 120px; } }
+      .header-container__logo img {
+        width: 120px; } }
 .header-container__menu {
   margin-right: 20px; }
   @media (max-width: 480px) {
     .header-container__menu {
       display: none; } }
+  @media (min-width: 480px) and (max-width: 780px) {
+    .header-container__menu {
+      margin: 0 auto; } }
 .header-menu-list {
   display: flex;
   flex-direction: row;
@@ -165,6 +175,10 @@ h1 {
     @media (max-width: 480px) {
       .header-menu-list a {
         color: var(--Dark-blue); } }
+    @media (min-width: 480px) and (max-width: 780px) {
+      .header-menu-list a {
+        font-size: 22px;
+        padding: 0; } }
   .header-menu-list li {
     margin: 34px 22px 0 0;
     font-size: 18px; }
@@ -176,6 +190,9 @@ h1 {
     padding: 17px 35px;
     background-color: var(--White);
     font-family: Fraunces; }
+    @media (min-width: 480px) and (max-width: 780px) {
+      .header-menu-list .contact {
+        margin-left: 15%; } }
   .header-menu-list .contact:hover {
     color: var(--White);
     background-color: rgba(255, 255, 255, 0.2); }
@@ -203,41 +220,74 @@ h1 {
     transform: translateY(0px); } }
 
 .main-content {
-  max-width: 1440px;
-  display: none; }
+  max-width: 1440px; }
   @media (max-width: 480px) {
     .main-content {
-      max-width: 480px; } }
+      width: 100%; } }
+  @media (min-width: 480px) and (max-width: 1024px) {
+    .main-content {
+      width: 100%; } }
 .main-content_section {
-  display: flex; }
+  display: flex;
+  width: 100%; }
   .main-content_section .main-content__column {
     flex: 0 0 50%; }
     .main-content_section .main-content__column .main-content__img {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+  @media (min-width: 480px) and (max-width: 1024px) {
+    .main-content_section {
+      flex-direction: column;
+      flex: 1 1 100%; } }
+@media (min-width: 280px) and (max-width: 1024px) {
+  .main-content_section {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 60px; }
+  .egg {
+    flex-direction: column-reverse;
+    margin-bottom: 60px; } }
 
 .content__text {
   padding-left: 60px; }
   .content__text a {
     text-decoration: underline var(--Yellow) 4px; }
-
+  @media (min-width: 280px) and (max-width: 1024px) {
+    .content__text {
+      text-align: center; }
+      .content__text .description {
+        padding: 10px; } }
 .content__text-right {
   padding-right: 60px; }
   .content__text-right a {
     text-decoration: underline var(--Soft-red) 4px; }
-
+  @media (min-width: 280px) and (max-width: 1024px) {
+    .content__text-right {
+      text-align: center;
+      margin: 0 auto;
+      padding: 0; } }
 .content__text,
 .content__text-right {
   width: 450px;
   margin: 0 auto;
   padding-top: 110px; }
+  @media (min-width: 280px) and (max-width: 1024px) {
+    .content__text,
+    .content__text-right {
+      width: 100vw;
+      padding: 0; }
+      .content__text .description,
+      .content__text-right .description {
+        padding: 10px 40px 15px 40px;
+        margin-bottom: 10px; } }
   .content__text h3,
   .content__text-right h3 {
     font-family: Fraunces;
     font-size: 42px;
     font-weight: 900;
-    color: var(--Very-dark-desaturated-blue); }
+    color: var(--Very-dark-desaturated-blue);
+    padding: 0 10px; }
   .content__text p,
   .content__text-right p {
     margin-top: -10px;
@@ -253,12 +303,15 @@ h1 {
     font-weight: 900;
     text-transform: uppercase;
     padding-left: 15px; }
-
-.image-box {
-  display: none; }
-
+    @media (min-width: 280px) and (max-width: 1024px) {
+      .content__text a,
+      .content__text-right a {
+        padding: 0; } }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    .content__text,
+    .content__text-right {
+      margin-bottom: 30px; } }
 .img-bg {
-  display: none;
   text-align: center; }
   .img-bg h3 {
     font-size: 27px;
@@ -268,11 +321,17 @@ h1 {
   .img-bg p {
     color: var(--Very-dark-grayish-blue); }
   .img-bg .content__text {
-    margin-top: 35.5%;
+    margin: 35.5% auto 0;
     width: 360px;
-    padding-bottom: 13px;
-    margin-right: 25%; }
-
+    padding-bottom: 13px; }
+    @media (max-width: 1025px) {
+      .img-bg .content__text {
+        display: block;
+        margin: 50% auto 0; } }
+    @media (max-width: 400px) {
+      .img-bg .content__text {
+        display: block;
+        margin: 70% auto 0; } }
 .design {
   background-image: url(/sunnyside_landing/images/desktop/image-graphic-design.jpg);
   background-repeat: no-repeat;
@@ -284,6 +343,9 @@ h1 {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover; }
+
+.image-box {
+  display: none; }
 
 .client {
   display: none;
