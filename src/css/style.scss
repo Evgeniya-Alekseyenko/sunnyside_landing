@@ -121,7 +121,7 @@ body {
 // Header
 
 .header-container {
-    background-image: url(/sunnyside_landing/images/desktop/image-header.jpg);
+    background-image: url(../../images/desktop/image-header.jpg);
     height: 800px;
     background-position: center top;
     background-repeat: no-repeat;
@@ -133,7 +133,7 @@ body {
         height: 740px;
         background-size: cover;
         background-position: center center;
-        background-image: url(/sunnyside_landing/images/mobile/image-header.jpg);
+        background-image: url(../../images/mobile/image-header.jpg);
     }
 }
 
@@ -383,13 +383,13 @@ h1 {
     }
 }
 .design {
-    background-image: url(/sunnyside_landing/images/desktop/image-graphic-design.jpg);
+    background-image: url(../../images/desktop/image-graphic-design.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
 }
 .photo {
-    background-image: url(/sunnyside_landing/images/desktop/image-photography.jpg);
+    background-image: url(../../images/desktop/image-photography.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
