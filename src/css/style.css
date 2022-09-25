@@ -416,6 +416,9 @@ h1 {
     @media (max-width: 1024px) {
       .images-content img {
         width: 100%; } }
+    @media (min-width: 1024px) and (max-width: 1440px) {
+      .images-content img {
+        width: 100%; } }
 footer {
   text-align: center;
   background-color: var(--Dark-moderate-cyan);
