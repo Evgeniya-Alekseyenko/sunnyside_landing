@@ -357,8 +357,6 @@ h1 {
     }
 }
 .img-bg {
-    // display: none;
-
     text-align: center;
     h3 {
         font-size: 27px;
@@ -371,10 +369,8 @@ h1 {
     }
     .content__text {
         margin: 35.5% auto 0;
-        // margin-top: 35.5%;
         width: 360px;
         padding-bottom: 13px;
-        // margin-right: 25%;
         @media (max-width: 1025px) {
             display: block;
             margin: 50% auto 0;
@@ -397,16 +393,15 @@ h1 {
     background-position: center top;
     background-size: cover;
 }
-.image-box {
-    display: none;
-}
 
 // Client's section
 
 .client {
-    display: none;
     max-width: 1440px;
     margin-top: 10rem;
+    @media (max-width: 1024px) {
+        margin-top: 3rem;
+    }
 
     h2 {
         text-align: center;
@@ -447,28 +442,45 @@ h1 {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+    }
     .client-container__column {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 350px;
         margin: 0 15px;
+        @media (max-width: 1024px) {
+            margin: 0 auto 60px;
+        }
     }
 }
 
 // Photo's container
 
 .images-content {
-    display: none;
-
     display: flex;
     max-width: 1440px;
     margin: 160px 0 auto;
+    @media (max-width: 1024px) {
+        flex: 0 0 50%;
+        flex-wrap: wrap;
+        margin: 20px 0 auto;
+    }
     .image-box {
         width: 25%;
+        @media (max-width: 1024px) {
+            width: 50%;
+        }
     }
     img {
-        max-width: 360px;
+        width: 360px;
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
     }
 }
 
