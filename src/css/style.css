@@ -417,16 +417,13 @@ h1 {
       .images-content img {
         width: 100%; } }
 footer {
-  display: none;
   text-align: center;
   background-color: var(--Dark-moderate-cyan);
-  margin: -3px auto; }
+  margin: -3px auto;
+  opacity: 0.8; }
   footer img {
     width: 180px;
     margin-top: 75px; }
-    @media (max-width: 480px) {
-      footer img {
-        width: 100px; } }
   footer .footer-menu-list {
     display: flex;
     width: 400px;
@@ -437,9 +434,6 @@ footer {
   footer li {
     font-size: 18px;
     padding-left: 30px; }
-    @media (max-width: 480px) {
-      footer li {
-        font-size: 8px; } }
   footer a {
     color: var(--Dark-desaturated-cyan); }
   footer a:hover {
@@ -456,8 +450,5 @@ footer {
   footer i {
     margin: 45px 25px 60px 0;
     color: var(--Dark-desaturated-cyan); }
-    @media (max-width: 480px) {
-      footer i {
-        font-size: 8px; } }
   footer i:hover {
     color: var(--White); }

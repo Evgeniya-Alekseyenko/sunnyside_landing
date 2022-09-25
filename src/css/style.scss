@@ -42,6 +42,7 @@ body {
 }
 
 // Burger-menu
+
 #popup__toggle {
     @media (min-width: 480px) {
         display: none;
@@ -487,17 +488,13 @@ h1 {
 // Footer
 
 footer {
-    display: none;
-
     text-align: center;
     background-color: var(--Dark-moderate-cyan);
     margin: -3px auto;
+    opacity: 0.8;
     img {
         width: 180px;
         margin-top: 75px;
-        @media (max-width: 480px) {
-            width: 100px;
-        }
     }
     .footer-menu-list {
         display: flex;
@@ -510,9 +507,6 @@ footer {
     li {
         font-size: 18px;
         padding-left: 30px;
-        @media (max-width: 480px) {
-            font-size: 8px;
-        }
     }
     a {
         color: var(--Dark-desaturated-cyan);
@@ -534,9 +528,6 @@ footer {
     i {
         margin: 45px 25px 60px 0;
         color: var(--Dark-desaturated-cyan);
-        @media (max-width: 480px) {
-            font-size: 8px;
-        }
     }
     i:hover {
         color: var(--White);
