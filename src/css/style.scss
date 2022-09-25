@@ -237,7 +237,7 @@ h1 {
 .arrow-down {
     transform: translatey(0px);
     animation: down 4s ease-in-out infinite;
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         animation: none;
     }
 }
